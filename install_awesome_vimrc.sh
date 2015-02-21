@@ -12,4 +12,9 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry' > ~/.vimrc
 
+echo "Compiling YouCompleteMe..."
+cd sources_non_forked/YouCompleteMe
+./install.sh --clang-completer
+cd ../../
+
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
